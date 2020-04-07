@@ -3,7 +3,7 @@ import axios from "axios";
 
 import "./App.scss";
 import SearchBar from "./components/SearchBar/SearchBar";
-import Results from "./components/Results";
+import Movies from "./components/Movies";
 import Popup from "./components/Popup";
 
 function App() {
@@ -24,6 +24,8 @@ function App() {
           });
         }
       );
+    } else if (event.target.value == "") {
+      return null;
     }
   };
 
@@ -55,13 +57,13 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
         <h1>Movie database 2020. Made with passion by a _Nologist ...</h1>
         <h2>Please search any movie by typing the name and press enter</h2>
       </header>
       <main>
         <SearchBar handleInput={handleInput} search={search} />
-        <Results results={state.results} openPopup={openPopup} />
+        <Movies results={state.results} openPopup={openPopup} />
 
         {typeof state.selected.Title !== "undefined" ? (
           <Popup selected={state.selected} closePopup={closePopup} />
