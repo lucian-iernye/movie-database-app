@@ -1,0 +1,39 @@
+$first-color: #1c1c31;
+$second-color: #96ce04;
+$third-color: white;
+
+.result {
+    width: 33.33%;
+    min-width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.03);
+        transition: 0.4s ease-out;
+        border: 1px solid $second-color;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    h3 {
+        text-align: center;
+        color: $first-color;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px;
+        background: $second-color;
+        flex: 1 1 100%;
+        transition: 0.4s ease-out;
+
+        &:hover {
+           background: $third-color;
+           color: $first-color;
+        }
+    }
+}
