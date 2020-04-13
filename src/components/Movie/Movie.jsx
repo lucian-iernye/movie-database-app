@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Result.module.scss";
+import styles from "./Movie.module.scss";
 
-const Result = ({ result, openPopup }) => {
+const Movie = ({ result, openPopup }) => {
   return (
     <div className={styles.result} onClick={() => openPopup(result.imdbID)}>
       <img src={result.Poster} alt={result.Title} />
@@ -10,4 +10,4 @@ const Result = ({ result, openPopup }) => {
   );
 };
 
-export default Result;
+export default Movie;

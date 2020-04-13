@@ -1,7 +1,7 @@
 import React from "react";
-import Results from "./Results";
+import Movies from "./Movies";
 
-describe("Results tests", () => {
+describe("Movies tests", () => {
   let component;
 
   beforeEach(() => {
