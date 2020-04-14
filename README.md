@@ -1,4 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ⭐ Lucian Iernye - Movie Database Web Application
+
+This application was created in React using axios to fetch the data from the API. The returned data it's displayed on the document as a nice styled card for each movie.
+
+### [View the demo](https://movie-db.lucianiernye.co.uk)
+
+## Instructions
+
+- Clone down the repository
+- Install the dependencies using the package managed (Yarn or NPM)
+- Start the app
+- Search for a movie
+- Press enter
+- Based on your search criteria, it will be displayed the searched movie
+- Press on any movie to see more information about it
 
 ## Available Scripts
 
@@ -37,32 +51,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Lucian Iernye](https://lucianiernye.co.uk)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is open source and available for collaboration.
