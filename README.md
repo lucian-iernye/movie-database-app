@@ -1,6 +1,7 @@
 # ⭐ Lucian Iernye - Movie Database Web Application
 
-This application was created in React using axios to fetch the data from the API. The returned data it's displayed on the document as a nice styled card for each movie.
+This application was created in React using axios to fetch the data from the API. 
+The returned data it's displayed on the document as a nice styled card for each movie.
 
 ### [View the demo](https://movie-db.lucianiernye.co.uk)
 
