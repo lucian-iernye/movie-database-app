@@ -6,7 +6,7 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import Movies from "./components/Movies";
 import Popup from "./components/Popup";
 
-function App() {
+const App = () => {
   const [state, setState] = useState({
     search: "",
     results: [],
@@ -15,7 +15,7 @@ function App() {
 
   const search = (event) => {
     if (event.key === "Enter") {
-      axios(`http://www.omdbapi.com/?&apikey=40062257&s=${state.search}`).then(
+      axios(`https://www.omdbapi.com/?&apikey=40062257&s=${state.search}`).then(
         ({ data }) => {
           let result = data.Search;
 
@@ -73,6 +73,6 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;
