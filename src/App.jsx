@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 import "./App.scss";
 import SearchBar from "./components/SearchBar/SearchBar";
@@ -15,15 +15,15 @@ const App = () => {
 
   const search = (event) => {
     if (event.key === "Enter") {
-      axios(`https://www.omdbapi.com/?&apikey=40062257&s=${state.search}`).then(
-        ({ data }) => {
+      fetch(`https://www.omdbapi.com/?&apikey=40062257&s=${state.search}`)
+        .then((res) => res.json())
+        .then((data) => {
           let result = data.Search;
 
           setState((prevState) => {
             return { ...prevState, results: result };
           });
-        }
-      );
+        });
     } else if (event.target.value === "") {
       return null;
     }
@@ -38,8 +38,9 @@ const App = () => {
   };
 
   const openPopup = (id) => {
-    axios(`https://www.omdbapi.com/?&apikey=40062257&i=${id}`)
-      .then(({ data }) => {
+    fetch(`https://www.omdbapi.com/?&apikey=40062257&i=${id}`)
+      .then((res) => res.json())
+      .then((data) => {
         let result = data;
 
         setState((prevState) => {
