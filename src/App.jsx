@@ -38,7 +38,7 @@ const App = () => {
   };
 
   const openPopup = (id) => {
-    axios(`http://www.omdbapi.com/?&apikey=40062257&i=${id}`)
+    axios(`https://www.omdbapi.com/?&apikey=40062257&i=${id}`)
       .then(({ data }) => {
         let result = data;
 
