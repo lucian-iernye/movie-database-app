@@ -38,7 +38,7 @@ const App = () => {
   };
 
   const openPopup = (id) => {
-    fetch(`https://www.omdbapi.com/?&apikey=40062257&i=${id}`)
+    fetch(`http://www.omdbapi.com/?&apikey=40062257&i=${id}`)
       .then((res) => res.json())
       .then((data) => {
         let result = data;
